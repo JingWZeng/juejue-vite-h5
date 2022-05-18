@@ -77,6 +77,6 @@ export const  imgUrlTrans = url=>{
     if(url && url.startsWith('http')){
         return url
     }else{
-        return  `${MODE === 'development' ? '' :'http://api.chennick.wang'}${url}`
+        return  `${MODE === 'development' ? '' :'http://47.104.81.159:7001/api/'}${url}`
     }
 }
