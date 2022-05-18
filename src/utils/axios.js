@@ -2,7 +2,7 @@ import axios from "axios";
 import {Toast} from "zarm";
 
 const MODE = import.meta.env.MODE //环境变量，环境变量的作用就是判断当前代码运行在开发环境还是生产环境。
-axios.defaults.baseURL = MODE === 'development' ? '/api' :'http://api.chennick.wang'
+axios.defaults.baseURL = MODE === 'development' ? '/api' :'http://api.chennick.wang/api'
 axios.defaults.withCredentials = true
 axios.defaults.headers['X-Requested-With'] = 'XMLHttpRequest'
 axios.defaults.headers['Authorization'] = `${localStorage.getItem('token') || null}`
